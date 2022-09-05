@@ -3,8 +3,9 @@
         <div class="d-flex boxed">
             <div class="card">
                 <div class="card-text boxed">
+                    <img src="../assets/img/new-corner.jpg">
                     <h3>Courses</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nam libero deserunt ipsa adipisci. Aspernatur dolores fugit vitae error repellendus reiciendis aut odit. Eaque incidunt porro voluptas maiores corporis esse?</p>
+                    <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nam libero deserunt ipsa adipisci. Aspernatur dolores fugit vitae error repellendus reiciendis aut odit. Eaque incidunt porro voluptas maiores corporis esse?</p>
                     <button class="btn">COURSE INFORMATION</button>
                 </div>
             </div>
@@ -50,22 +51,30 @@ export default {
         .card {
             width: 30%;
             margin-right: 2.5rem;
-            h3 {
-                font-size: 1.5rem;
-                color: $title_color;
-                margin: 1.5rem 0;
+            position: relative;
+            img {
+                width: 25%;
+                position: absolute;
+                top: 0;
+                left: 0;
             }
 
-            p {
-                line-height: 1.5rem;
-                color: $text_color;
-                margin-bottom: 1.5rem;
-            }
-
-            .btn {
-                background-color: $brand_color;
-                color: $btn_text_color;
-                margin-bottom: 2rem;
+            .card-text {
+                h3 {
+                    font-size: 1.5rem;
+                    color: $title_color;
+                    margin: 2.5rem 0;
+                }
+    
+                p {
+                    margin-bottom: 1.5rem;
+                }
+    
+                .btn {
+                    background-color: $brand_color;
+                    color: $btn_text_color;
+                    margin-bottom: 2rem;
+                }
             }
         }
 

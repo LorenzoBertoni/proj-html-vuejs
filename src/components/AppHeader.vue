@@ -95,7 +95,6 @@ export default {
     .top-header {
         background-color: $header_color;
         padding: 1rem 0;
-
         p {
             color: #7F9EA8;
         }
@@ -111,6 +110,7 @@ export default {
                 }
             }
         }
+
         .nav-bar {
             .active {
                 border-bottom: 3px solid $brand_color;
@@ -149,7 +149,7 @@ export default {
         background-image: url('../assets/img/homepage-hero-background.jpg');
         background-size: cover;
         background-position: center;
-        padding: 20rem 0;
+        padding: 15rem 0;
         .jumbo-wrapper {
             .jumbo-text {
                 color: #fff;

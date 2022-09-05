@@ -2,25 +2,26 @@
     <main>
         <SectionLessons/>
 
-        <div class="cta">
-            <div class="d-flex-between boxed">
+        <section class="cta">
+            <div class="d-flex-around boxed">
                 <div class="left-side">
                     <h3>Start Learning to Drive Today</h3>
-                    <p>Give us a call to schedule your first driving lesson</p>
+                    <h4>Give us a call to schedule your first driving lesson</h4>
                 </div>
 
                 <div class="right-side">
-                    <h3>1-800-555-555</h3>
+                    <p>1-800-555-555</p>
                 </div>
             </div>
-        </div>
+        </section>
 
         <SectionCourses/>
         <div class="bg-effect">
-            <img src="../assets/img/latestnews-bottom-new-color.png" alt="">
+            <img src="../assets/img/latestnews-bottom-new-color.png">
         </div>
-        
         <CoursesPercentages/>
+
+        <SectionInstructors/>
     </main>
 </template>
 
@@ -28,13 +29,36 @@
 import SectionLessons from './SectionLessons.vue';
 import SectionCourses from './SectionCourses.vue';
 import CoursesPercentages from './CoursesPercentages.vue';
+import SectionInstructors from './SectionInstructors.vue';
 
 export default {
     name: 'AppMain',
     components: {
         SectionLessons,
         SectionCourses,
-        CoursesPercentages
+        CoursesPercentages,
+        SectionInstructors
+    },
+    data() {
+        return {
+            instructors:    [
+                                {
+                                    name: 'Mike Hart',
+                                    url: 'instructor-mikehart-200x127.jpg',
+                                    aboutMe: 'lorem ipsum doloret sit amet,consectetur adipiscing elit'
+                                },
+                                {
+                                    name: 'John Smith',
+                                    url: 'instructor-johnsmith-200x127.jpg',
+                                    aboutMe: 'lorem ipsum doloret sit amet,consectetur adipiscing elit'
+                                },
+                                {
+                                    name: 'Angela Hart',
+                                    url: 'instructor-angelahart-200x127.jpg',
+                                    aboutMe: 'lorem ipsum doloret sit amet,consectetur adipiscing elit'
+                                }
+                            ]
+        }
     }
 }
 </script>
@@ -50,6 +74,13 @@ export default {
         .left-side {
             h3 {
                 margin-bottom: .5rem;
+                font-size: 2rem;
+            }
+        }
+
+        .right-side {
+            p {
+                font-size: 2rem;
             }
         }
     }

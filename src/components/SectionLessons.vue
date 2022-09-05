@@ -4,24 +4,31 @@
                 <div class="lessons-info d-flex-column">
                     <h2>Get Behind The Wheel</h2>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ex officia labore quis. Incidunt eius recusandae impedit aperiam voluptate eligendi.</p>
+                    <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ex officia labore quis. Incidunt eius recusandae impedit aperiam voluptate eligendi.</p>
 
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit officiis ipsam dignissimos dolor modi sapiente impedit laborum in! Numquam porro, obcaecati velit odit sint vitae voluptate iusto veritatis labore odio quos mollitia est, dignissimos architecto facilis, cupiditate saepe sit! Ratione?</p>
+                    <p class="main-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit officiis ipsam dignissimos dolor modi sapiente impedit laborum in! Numquam porro, obcaecati velit odit sint vitae voluptate iusto veritatis labore odio quos mollitia est, dignissimos architecto facilis, cupiditate saepe sit! Ratione?</p>
                 </div>
                 
                 <div class="form-wrapper">
                     <div class="card">
                         <div class="form-info boxed">
                             <h3>First Lesson Free!</h3>
-
-                            <p>When you make a block booking with us your first lesson is included free.</p>
+                            <p class="main-text">When you make a block booking with us your first lesson is included free.</p>
                         </div>
 
-                        <form action="" class="boxed">
-                            <input type="text" placeholder="Your Name*" class="input-style" required>
-                            <input type="email" placeholder="Email*" class="input-style" required>
-                            <input type="text" placeholder="Telephone" class="input-style">
-                            <input type="text" placeholder="Location" class="input-style">
+                        <form action="" class="boxed" method="get">
+                            <input type="text" placeholder="Your Name*" minlength="2" required
+                            class="input-style"
+                            >
+                            <input type="email" placeholder="Email*" required
+                            class="input-style"
+                            >
+                            <input type="text" placeholder="Telephone" 
+                            class="input-style"
+                            >
+                            <input type="text" placeholder="Location" 
+                            class="input-style"
+                            >
                             <button class="btn">REQUEST A CALLBACK</button>
                         </form>
                     </div>
@@ -51,9 +58,9 @@ export default {
             }
 
             p {
-                line-height: 2rem;
                 margin: 1rem 0;
-                color: $text_color;
+                font-size: 1.2rem;
+                line-height: 2.5rem;
             }
         }
 
@@ -67,7 +74,6 @@ export default {
                     }
                     p {
                         line-height: 1.5rem;
-                        color: $text_color;
                         margin-bottom: 1rem;
                     }
                 }

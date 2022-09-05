@@ -1,6 +1,6 @@
 <template>
     <div class="course d-flex-column-center boxed">
-        <img :src="require('../assets/img/' + path)" alt="">
+        <img :src="require('../assets/img/' + path)" :alt="title">
         <h4>{{title}}</h4>
         <button class="btn">LEARN MORE</button>
     </div>

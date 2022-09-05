@@ -30,6 +30,12 @@ body {
     align-items: center;
 }
 
+.d-flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .d-flex-start {
     display: flex;
     justify-content: flex-start;
@@ -83,4 +89,9 @@ body {
     border: 1px solid lightgray;
     border-radius: .2rem;
     background-color: #E5E8EB;
+}
+
+.main-text {
+    line-height: 2rem;
+    color: rgb(110, 108, 108);
 }

@@ -6,53 +6,50 @@
                         <div class="mask half">
                             <div class="fill"></div>
                         </div>
-                        <div class="mask full">
+                        <div class="mask close-to-full">
                             <div class="fill"></div>
                         </div>
                         <div class="inside-circle"> 95% </div>
                     </div>
                 </div>
-                <p>Pass Rate</p>
+                <p>PASS RATE</p>
             </div>
 
             <div class="card d-flex-column-center">
                 <div class="circle-wrap">
                     <div class="circle">
                         <div class="mask half">
-                            <div class="fill"></div>
+                            <div class="fill-two"></div>
                         </div>
                         <div class="mask full">
-                            <div class="fill"></div>
+                            <div class="fill-two"></div>
                         </div>
-                        <div class="inside-circle"> 95% </div>
+                        <div class="inside-circle"> 100% </div>
                     </div>
                 </div>
-                <p>Pass Rate</p>
+                <p>REFERRAL RATE</p>
             </div>
 
             <div class="card d-flex-column-center">
                 <div class="circle-wrap">
                     <div class="circle">
                         <div class="mask half">
-                            <div class="fill"></div>
+                            <div class="no-fill"></div>
                         </div>
-                        <div class="mask full">
-                            <div class="fill"></div>
+                        <div class="mask empty">
+                            <div class="no-fill"></div>
                         </div>
-                        <div class="inside-circle"> 95% </div>
+                        <div class="inside-circle"> 0% </div>
                     </div>
                 </div>
-                <p>Pass Rate</p>
+                <p>ACCIDENT RATE</p>
             </div>
         </div>
 </template>
 
 <script>
 export default {
-    name: 'CoursesPercentages',
-    props: {
-        percentage: Number
-    }
+    name: 'CoursesPercentages'
 }
 </script>
 
@@ -60,10 +57,16 @@ export default {
 @import '../styles/vars.scss';
 
     .courses-percentages {
-        gap: .5rem;
+        gap: .8rem;
+        p {
+            margin-bottom: 4rem;
+            color: $text_color;
+            font-weight: 700;
+        }
         .card {
-            border-top: 4px solid $brand_color;
-
+            border-top: 5px solid $brand_color;
+            transform: translateY(-8rem);
+            //***regole generali per gli spin
             .circle-wrap {
                 margin: 3rem auto;
                 width: 150px;
@@ -76,7 +79,9 @@ export default {
                     .mask {
                         clip: rect(0px, 150px, 150px, 75px);
                     }
-                    .mask, .fill {
+                    .mask, .fill,
+                    .fill-two,
+                    .no-fill {
                         width: 150px;
                         height: 150px;
                         position: absolute;
@@ -101,24 +106,50 @@ export default {
                 }
             }
 
-            .mask .fill {
+            .mask .fill,
+            .mask .fill-two,
+            .mask .no-fill {
                 clip: rect(0px, 75px, 150px, 0px);
                 background-color: $brand_color;
             }
 
-            .mask.full,
-            .circle .fill {
-                animation: fill ease-in-out 3s;
+            //***animazioni uniche per spin
+            //*95%
+            .mask.close-to-full,
+            .circle .fill{
+                animation: spin ease-in-out 3s;
                 transform: rotate(171deg);
             }
 
-            @keyframes fill{
+            @keyframes spin {
                 0% {
                     transform: rotate(0deg);
                 }
                 100% {
                     transform: rotate(171deg);
                 }
+            }
+            //*100%
+            .mask.full,
+            .circle .fill-two {
+                animation: fullSpin ease-in-out 3s;
+                transform: rotate(180deg);
+            }
+
+            @keyframes fullSpin {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(180deg);
+                }
+            }
+
+            //*0%
+            .mask.empty,
+            .circle .no-fill {
+                animation: noSpin ease-in-out 3s;
+                transform: rotate(2deg);
             }
         }
     }
