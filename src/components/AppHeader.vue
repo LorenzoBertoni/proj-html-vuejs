@@ -2,8 +2,8 @@
     <header>
         <div class="top-header">
             <div class="d-flex-between boxed">
-                <p>lorem ipsum</p>
-                <p>lorem ipsum sit dolor amet</p>
+                <p>We have a 95% Succesfull Pass Rate!</p>
+                <p>Give us a call to book your tuition! 1-800-555-555</p>
             </div>
         </div>
 
@@ -20,14 +20,16 @@
                 
                 <nav class="nav-bar">
                     <ul class="d-flex-end">
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
+                        <li v-for="(link, index) in navLinks" :key="index"
+                        :class="link.isActive? 'active' : '' "
+                        >
+                            <a href="#">
+                                {{link.name.toUpperCase()}}
+                            </a>
+                        </li>
+
                         <li>
-                            <a href="#" class="btn">btn</a>
+                            <a href="#" class="btn">BOOK NOW</a>
                         </li>
                     </ul>
                 </nav>
@@ -37,8 +39,8 @@
         <section id="jumbotron">
             <div class="jumbo-wrapper boxed d-flex-start">
                 <div class="jumbo-text">
-                    <h1>lorem Ipsum sit dolor</h1>
-                    <p>lorem ipsum</p>
+                    <h1>Drive with Avada</h1>
+                    <p>We offer the finest driving tuition money can buy</p>
                 </div>
             </div>
         </section>
@@ -47,7 +49,43 @@
 
 <script>
 export default {
-    name: 'AppHeader'
+    name: 'AppHeader',
+    data() {
+        return {
+            navLinks:   [
+                            {
+                                name: 'home',
+                                isActive: true,
+                                isNew: false
+                            },
+                            {
+                                name: 'about',
+                                isActive: false,
+                                isNew: false
+                            },
+                            {
+                                name: 'prices',
+                                isActive: false,
+                                isNew: false
+                            },
+                            {
+                                name: 'courses',
+                                isActive: false,
+                                isNew: true
+                            },
+                            {
+                                name: 'location',
+                                isActive: false,
+                                isNew: false
+                            },
+                            {
+                                name: 'blog',
+                                isActive: false,
+                                isNew: false
+                            },
+                        ]
+        }
+    }
 }
 </script>
 
@@ -74,16 +112,33 @@ export default {
             }
         }
         .nav-bar {
+            .active {
+                border-bottom: 3px solid $brand_color;
+            }
+
             ul {
                 list-style: none;
                 gap: 4rem;
                 li {
-                    color: #fff;
+                    a {
+                        color: #fff;
+                        font-weight: bold;
+                        cursor: pointer;
+                        transition: color .3s linear;
+                        text-decoration: none;
+                        &:hover:not(.btn) {
+                            color: $brand_color;
+                        }
+                    }
                 }
 
                 .btn {
                     background-color: $brand_color;
                     color: $btn_text_color;
+                    transition: background-color .3s linear;
+                    &:hover {
+                        background-color: #48644B;
+                    }
                 }
             }
         }

@@ -47,12 +47,24 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+
+.d-flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 //**REGOLE DEGLI ELEMENTI 
 .btn {
     padding: .6rem 1.5rem;
     border-radius: 1rem;
     text-decoration: none;
     border: none;
+    cursor: pointer;
+    transition: all .3s linear;
+    &:hover {
+        border-radius: .5rem;
+    }
 }
 
 .card {
