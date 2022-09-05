@@ -59,18 +59,13 @@ export default {
         padding: 1rem 0;
 
         p {
-            color: $text_color;
+            color: #7F9EA8;
         }
     }
 
     .bottom-header {
         background-color: gray;
-        opacity: 90%;
-        padding: 2.5rem;
-        position: fixed;
-        width: 100%;
-        top: 50px;
-        left: 0;
+        padding: 2rem 0;
         .logo-wrapper {
             a {
                 img {
@@ -99,10 +94,10 @@ export default {
         background-image: url('../assets/img/homepage-hero-background.jpg');
         background-size: cover;
         background-position: center;
-        padding: 20rem;
+        padding: 20rem 0;
         .jumbo-wrapper {
             .jumbo-text {
-                color: $text_color;
+                color: #fff;
                 h1 {
                     font-size: 3rem;
                     margin-bottom: .5rem;

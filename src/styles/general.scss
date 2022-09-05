@@ -7,7 +7,7 @@
 body {
     font-family: sans-serif;
 }
-
+//**REGOLE DI LAYOUT
 .boxed {
     width: 70%;
     margin: auto;
@@ -42,8 +42,33 @@ body {
     align-items: center;
 }
 
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+//**REGOLE DEGLI ELEMENTI 
 .btn {
-    padding: .5rem 1rem;
+    padding: .6rem 1.5rem;
     border-radius: 1rem;
     text-decoration: none;
+    border: none;
+}
+
+.card {
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: 1px 10px 5px 8px rgba(0,0,0,0.10);
+    transform: translateY(-2.3rem);
+}
+
+.input-style {
+    width: 100%;
+    padding: 1rem .5rem;
+    border: 1px solid lightgray;
+    border-radius: .2rem;
+    background-color: #E5E8EB;
 }
