@@ -35,12 +35,10 @@ export default {
         .d-flex-column-center {
             width: 60%;
             margin: 0 auto;
-            justify-content: stretch;
+            width: inherit;
             .title {
                 margin: 2.5rem 0 3rem 0;
             }
-            
-            width: inherit;
             .input-style {
                 background-color: #fff;
                 width: 100%;

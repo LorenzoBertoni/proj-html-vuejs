@@ -1,5 +1,5 @@
 <template>
-    <div class="footer-top">
+    <section id="footer-top">
         <div class="d-flex-center boxed">
             <div class="school-info">
                 <div class="logo-wrapper">
@@ -56,7 +56,7 @@
                 <a href="#" class="btn">BOOK NOW</a>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -86,7 +86,7 @@ export default {
 <style scoped lang="scss">
 @import '../../styles/vars.scss';
 
-    .footer-top {
+    #footer-top {
         padding: 5rem 0 8rem 0;
         background-image: url('../../assets/img/footer-background-color.jpg');
         background-position: center;

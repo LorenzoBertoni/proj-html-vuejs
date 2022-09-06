@@ -1,5 +1,5 @@
 <template>
-    <div class="footer-bottom">
+    <section id="footer-bottom">
         <div class="d-flex-around boxed">
             <div class="copyright">
                 <p class="main-text">
@@ -16,7 +16,7 @@
                 <i class="fa-brands fa-instagram"></i>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -27,9 +27,9 @@ export default {
 
 <style scoped lang="scss">
 @import '../../styles/vars.scss';
-    .footer-bottom {
+    #footer-bottom {
         background-color: #1C1D1E;
-        padding: 5rem 0;
+        padding: 2rem 0;
         span {
             color: $brand_color;
         }

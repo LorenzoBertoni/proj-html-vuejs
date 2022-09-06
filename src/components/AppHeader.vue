@@ -3,7 +3,10 @@
         <div class="top-header">
             <div class="d-flex-between boxed">
                 <p>We have a 95% Succesfull Pass Rate!</p>
-                <p>Give us a call to book your tuition! 1-800-555-555</p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    Give us a call to book your tuition! 1-800-555-555
+                </p>
             </div>
         </div>
 
@@ -23,7 +26,8 @@
                         <li v-for="(link, index) in navLinks" :key="index"
                         :class="link.isActive? 'active' : '' "
                         >
-                            <a :href="'#' + link.goTo">
+                            <a :href="'#' + link.goTo"
+                            :class="link.isNew? 'new' : '' ">
                                 {{link.name.toUpperCase()}}
                             </a>
                         </li>
@@ -42,6 +46,18 @@
                     <h1>Drive with Avada</h1>
                     <p>We offer the finest driving tuition money can buy</p>
                 </div>
+
+                <div class="jumbo-cards">
+                    <div class="card">
+                        <i class="fa-solid fa-file"></i>
+                        <p>Demos</p>
+                    </div>
+
+                    <div class="card two">
+                        <p class="icon">$39</p>
+                        <p>On Sale</p>
+                    </div>
+                </div>
             </div>
         </section>
     </header>
@@ -57,7 +73,7 @@ export default {
                                 name: 'home',
                                 isActive: true,
                                 isNew: false,
-                                goTo: '' 
+                                goTo: 'jumbotron' 
                             },
                             {
                                 name: 'about',
@@ -81,7 +97,7 @@ export default {
                                 name: 'location',
                                 isActive: false,
                                 isNew: false,
-                                goTo: ''
+                                goTo: 'footer-top'
                             },
                             {
                                 name: 'blog',
@@ -120,6 +136,7 @@ export default {
         .nav-bar {
             .active {
                 border-bottom: 3px solid $brand_color;
+                margin-top: 3px;
             }
 
             ul {
@@ -133,7 +150,14 @@ export default {
                         transition: color .3s linear;
                         text-decoration: none;
                         &:hover:not(.btn) {
-                            color: $brand_color;
+                            color: #7F9EA8;
+                        }
+                        &.new::after {
+                            content: 'New';
+                            width: 60px;
+                            padding: .3rem .5rem;
+                            border-radius: .5rem;
+                            background-color: $brand_color;
                         }
                     }
                 }
@@ -156,16 +180,52 @@ export default {
         background-size: cover;
         background-position: center;
         padding: 15rem 0;
+        position: relative;
         .jumbo-wrapper {
             .jumbo-text {
                 color: #fff;
                 h1 {
-                    font-size: 3rem;
+                    font-size: 4rem;
                     margin-bottom: .5rem;
                 }
 
                 p {
                     font-size: 1.1rem;
+                }
+            }
+            .jumbo-cards {
+                .card, .two {
+                    width: 70px;
+                    padding: .5rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: absolute;
+                    i {
+                        font-size: 1.5rem;
+                        color: #7F9EA8;
+                        margin-bottom: .5rem;
+                    }
+
+                    p {
+                        color: #7F9EA8;
+                        font-size: .8rem;
+                    }
+                }
+
+                .card {
+                    top: 1rem;
+                    right: 1rem;
+                }
+
+                .two {
+                    top: 6rem;
+                    right: 1rem;
+                    .icon {
+                        font-size: 1.5rem;
+                        color: $brand_color;
+                        font-weight: 700;
+                    }
                 }
             }
         }

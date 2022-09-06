@@ -2,7 +2,7 @@
     <main>
         <SectionLessons/>
 
-        <section class="cta">
+        <section id="cta">
             <div class="d-flex-around boxed">
                 <div class="left-side">
                     <h3>Start Learning to Drive Today</h3>
@@ -10,7 +10,9 @@
                 </div>
 
                 <div class="right-side">
-                    <p>1-800-555-555</p>
+                    <p> 
+                        <i class="fa-solid fa-phone"></i> 1-800-555-555
+                    </p>
                 </div>
             </div>
         </section>
@@ -55,7 +57,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    .cta {
+    #cta {
         background-color: lightblue;
         background-image: url('../assets/img/horizontal-cta-background.jpg');
         background-position: center;

@@ -51,12 +51,12 @@ export default {
                                 {
                                     name: 'Grant Hart',
                                     url: 'testimonial-grant.png',
-                                    isSaying: 'Avada Driving School really helped me build my confidence behind the whell and with driving in general, and they got me a first time pass! Highly recommended'
+                                    isSaying: 'Avada Driving School really helped me build my confidence behind the whell and with driving in general, and they got me a first time pass!'
                                 },
                                 {
                                     name: 'Harold Smith',
                                     url: 'testimonial-harold.png',
-                                    isSaying: 'Avada Driving School really helped me build my confidence behind the whell and with driving in general, and they got me a first time pass! Highly recommended'
+                                    isSaying: 'Avada Driving School really helped me build my confidence behind the whell and with driving in general'
                                 },
                                 {
                                     name: 'Kate Jones',
@@ -66,7 +66,7 @@ export default {
                                 {
                                     name: 'Kelly Doe',
                                     url: 'testimonial-kelly.png',
-                                    isSaying: 'Avada Driving School really helped me build my confidence behind the whell and with driving in general, and they got me a first time pass! Highly recommended'
+                                    isSaying: 'Avada Driving School really helped me build my confidence behind the whell and with driving in general. Highly recommended!'
                                 }
                             ]
         }
