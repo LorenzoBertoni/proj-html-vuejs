@@ -22,6 +22,12 @@
         <CoursesPercentages/>
 
         <SectionInstructors/>
+
+        <SectionTestimonials/>
+
+        <SectionLatestNews/>
+
+        <SectionNewsLetter/>
     </main>
 </template>
 
@@ -30,6 +36,9 @@ import SectionLessons from './SectionLessons.vue';
 import SectionCourses from './SectionCourses.vue';
 import CoursesPercentages from './CoursesPercentages.vue';
 import SectionInstructors from './SectionInstructors.vue';
+import SectionTestimonials from './SectionTestimonials.vue';
+import SectionLatestNews from './SectionLatestNews.vue';
+import SectionNewsLetter from './SectionNewsLetter.vue';
 
 export default {
     name: 'AppMain',
@@ -37,28 +46,10 @@ export default {
         SectionLessons,
         SectionCourses,
         CoursesPercentages,
-        SectionInstructors
-    },
-    data() {
-        return {
-            instructors:    [
-                                {
-                                    name: 'Mike Hart',
-                                    url: 'instructor-mikehart-200x127.jpg',
-                                    aboutMe: 'lorem ipsum doloret sit amet,consectetur adipiscing elit'
-                                },
-                                {
-                                    name: 'John Smith',
-                                    url: 'instructor-johnsmith-200x127.jpg',
-                                    aboutMe: 'lorem ipsum doloret sit amet,consectetur adipiscing elit'
-                                },
-                                {
-                                    name: 'Angela Hart',
-                                    url: 'instructor-angelahart-200x127.jpg',
-                                    aboutMe: 'lorem ipsum doloret sit amet,consectetur adipiscing elit'
-                                }
-                            ]
-        }
+        SectionInstructors,
+        SectionTestimonials,
+        SectionLatestNews,
+        SectionNewsLetter
     }
 }
 </script>

@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: sans-serif;
@@ -94,4 +97,9 @@ body {
 .main-text {
     line-height: 2rem;
     color: rgb(110, 108, 108);
+}
+
+.title {
+    font-size: 2rem;
+    color: #484848;
 }

@@ -23,7 +23,7 @@
                         <li v-for="(link, index) in navLinks" :key="index"
                         :class="link.isActive? 'active' : '' "
                         >
-                            <a href="#">
+                            <a :href="'#' + link.goTo">
                                 {{link.name.toUpperCase()}}
                             </a>
                         </li>
@@ -56,32 +56,38 @@ export default {
                             {
                                 name: 'home',
                                 isActive: true,
-                                isNew: false
+                                isNew: false,
+                                goTo: '' 
                             },
                             {
                                 name: 'about',
                                 isActive: false,
-                                isNew: false
+                                isNew: false,
+                                goTo: 'instructors'
                             },
                             {
                                 name: 'prices',
                                 isActive: false,
-                                isNew: false
+                                isNew: false,
+                                goTo: 'news-letter'
                             },
                             {
                                 name: 'courses',
                                 isActive: false,
-                                isNew: true
+                                isNew: true,
+                                goTo: 'courses'
                             },
                             {
                                 name: 'location',
                                 isActive: false,
-                                isNew: false
+                                isNew: false,
+                                goTo: ''
                             },
                             {
                                 name: 'blog',
                                 isActive: false,
-                                isNew: false
+                                isNew: false,
+                                goTo: ''
                             },
                         ]
         }

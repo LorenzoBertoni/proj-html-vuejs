@@ -5,7 +5,11 @@
                 <div class="card-text boxed">
                     <img src="../assets/img/new-corner.jpg">
                     <h3>Courses</h3>
-                    <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nam libero deserunt ipsa adipisci. Aspernatur dolores fugit vitae error repellendus reiciendis aut odit. Eaque incidunt porro voluptas maiores corporis esse?</p>
+                    <p 
+                    class="main-text"
+                    >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nam libero deserunt ipsa adipisci. Aspernatur dolores fugit vitae error
+                    </p>
                     <button class="btn">COURSE INFORMATION</button>
                 </div>
             </div>

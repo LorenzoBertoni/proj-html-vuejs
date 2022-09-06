@@ -2,7 +2,7 @@
     <section id="lessons">
             <div class="d-flex boxed">
                 <div class="lessons-info d-flex-column">
-                    <h2>Get Behind The Wheel</h2>
+                    <h2 class="title">Get Behind The Wheel</h2>
 
                     <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ex officia labore quis. Incidunt eius recusandae impedit aperiam voluptate eligendi.</p>
 
@@ -52,8 +52,6 @@ export default {
 
         .lessons-info {
             h2 {
-                color: $title_color;
-                font-size: 2rem;
                 margin-bottom: 2rem;
             }
 
