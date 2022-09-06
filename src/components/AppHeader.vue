@@ -1,6 +1,6 @@
 <template>
     <header>
-        <div class="top-header">
+        <div class="top-header" id="start">
             <div class="d-flex-between boxed">
                 <p>We have a 95% Succesfull Pass Rate!</p>
                 <p>
