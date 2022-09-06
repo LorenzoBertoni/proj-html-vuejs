@@ -27,9 +27,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../styles/vars.scss';
+@import '../../styles/vars.scss';
     #news-letter {
-        background-image: url('../assets/img/newsletter_background.jpg');
+        background-image: url('../../assets/img/newsletter_background.jpg');
         background-position: center;
         background-size: cover;
         .d-flex-column-center {

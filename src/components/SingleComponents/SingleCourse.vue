@@ -1,6 +1,6 @@
 <template>
     <div class="course d-flex-column-center boxed">
-        <img :src="require('../assets/img/' + path)" :alt="title">
+        <img :src="require('../../assets/img/' + path)" :alt="title">
         <h4>{{title}}</h4>
         <button class="btn">LEARN MORE</button>
     </div>
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../styles/vars.scss';
+@import '../../styles/vars.scss';
 
     .course {
             gap: 1rem;

@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    @import '../styles/vars.scss';
+    @import '../../styles/vars.scss';
     #lessons {
         .lessons-info, .form-wrapper {
             width: 50%;

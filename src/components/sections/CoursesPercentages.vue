@@ -54,7 +54,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../styles/vars.scss';
+@import '../../styles/vars.scss';
 
     .courses-percentages {
         gap: .8rem;

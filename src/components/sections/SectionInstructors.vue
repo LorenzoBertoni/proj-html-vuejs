@@ -17,7 +17,7 @@
             >
                 <div class="boxed">
                     <div class="img-wrapper">
-                        <img :src="require('../assets/img/' + instructor.url)" alt="">
+                        <img :src="require('../../assets/img/' + instructor.url)" alt="">
                     </div>
 
                     <h4 class="name">{{instructor.name}}</h4>
@@ -67,7 +67,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../styles/vars.scss';
+@import '../../styles/vars.scss';
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
     .right-side {

@@ -6,7 +6,7 @@
                 Here's what our happy drivers had to say about our services:
             </p>
             <div class="img-wrapper">
-                <img :src="require('../assets/img/' + testimonials[active].url)" 
+                <img :src="require('../../assets/img/' + testimonials[active].url)" 
                 :alt="'Photo for ' + testimonials[active].name"
                 >
             </div>
@@ -90,7 +90,7 @@ export default {
 
     #testimonials {
         padding: 10rem 0;
-        background-image: url('../assets/img/testimonial-background.jpg');
+        background-image: url('../../assets/img/testimonial-background.jpg');
         background-size: cover;
         background-position: center;
         .d-flex-column-center {

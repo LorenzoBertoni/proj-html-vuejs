@@ -9,7 +9,7 @@
                 :key="index"
                 >
                     <div class="img-wrapper">
-                        <img :src="require('../assets/img/' + news.url)" :alt="news.title">
+                        <img :src="require('../../assets/img/' + news.url)" :alt="news.title">
                     </div>
                     <h4>{{news.title}}</h4>
                     <p class="main-text">
@@ -54,10 +54,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../styles/vars.scss';
+@import '../../styles/vars.scss';
     #latest-news {
         height: 600px;
-        background-image: url('../assets/img/latestnews-background.jpg');
+        background-image: url('../../assets/img/latestnews-background.jpg');
         background-position: center;
         background-size: cover;
         .card {

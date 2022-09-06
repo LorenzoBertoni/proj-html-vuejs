@@ -32,13 +32,13 @@
 </template>
 
 <script>
-import SectionLessons from './SectionLessons.vue';
-import SectionCourses from './SectionCourses.vue';
-import CoursesPercentages from './CoursesPercentages.vue';
-import SectionInstructors from './SectionInstructors.vue';
-import SectionTestimonials from './SectionTestimonials.vue';
-import SectionLatestNews from './SectionLatestNews.vue';
-import SectionNewsLetter from './SectionNewsLetter.vue';
+import SectionLessons from './sections/SectionLessons.vue';
+import SectionCourses from './sections/SectionCourses.vue';
+import CoursesPercentages from './sections/CoursesPercentages.vue';
+import SectionInstructors from './sections/SectionInstructors.vue';
+import SectionTestimonials from './sections/SectionTestimonials.vue';
+import SectionLatestNews from './sections/SectionLatestNews.vue';
+import SectionNewsLetter from './sections/SectionNewsLetter.vue';
 
 export default {
     name: 'AppMain',

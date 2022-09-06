@@ -3,7 +3,7 @@
         <div class="d-flex boxed">
             <div class="card">
                 <div class="card-text boxed">
-                    <img src="../assets/img/new-corner.jpg">
+                    <img src="../../assets/img/new-corner.jpg">
                     <h3>Courses</h3>
                     <p 
                     class="main-text"
@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import SingleCourse from './SingleCourse.vue';
+import SingleCourse from '../SingleComponents/SingleCourse.vue';
 export default {
     name: 'SectionCourses',
     components: {
@@ -45,10 +45,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../styles/vars.scss';
+@import '../../styles/vars.scss';
 
     #courses {
-        background-image: url('../assets/img/promise-background.jpg');
+        background-image: url('../../assets/img/promise-background.jpg');
         background-position: center;
         background-size: cover;
         background-color: lightgray;
