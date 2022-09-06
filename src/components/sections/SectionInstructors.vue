@@ -68,7 +68,6 @@ export default {
 
 <style scoped lang="scss">
 @import '../../styles/vars.scss';
-@import '~@fortawesome/fontawesome-free/css/all.css';
 
     .right-side {
         width: 60%;

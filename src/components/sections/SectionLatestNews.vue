@@ -13,7 +13,7 @@
                     </div>
                     <h4>{{news.title}}</h4>
                     <p class="main-text">
-                        <small>{{news.date}} <span>{{news.comments}} comments</span></small> 
+                        <small>{{news.date}} | <span>{{news.comments}} comments</span></small> 
                     </p>
                     <p class="main-text">
                         {{news.description}}
