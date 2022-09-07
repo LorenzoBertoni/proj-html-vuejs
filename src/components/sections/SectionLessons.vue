@@ -69,6 +69,7 @@ export default {
                     h3 {
                         margin-bottom: 2rem;
                         color: $brand_color;
+                        font-size: 1.5rem;
                     }
                     p {
                         line-height: 1.5rem;

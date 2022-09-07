@@ -17,7 +17,9 @@
             >
                 <div class="boxed">
                     <div class="img-wrapper">
-                        <img :src="require('../../assets/img/' + instructor.url)" alt="">
+                        <img :src="require('../../assets/img/' + instructor.url)" 
+                        :alt="'instructor ' + instructor.name"
+                        >
                     </div>
 
                     <h4 class="name">{{instructor.name}}</h4>
@@ -47,17 +49,17 @@ export default {
             instructors:    [
                                 {
                                     name: 'Mike Hart',
-                                    url: 'instructor-mikehart-200x127.jpg',
+                                    url: 'instructor-mikehart-400x254.jpg',
                                     aboutMe: 'lorem ipsum doloret sit amet,consectetur adipiscing elit'
                                 },
                                 {
                                     name: 'John Smith',
-                                    url: 'instructor-johnsmith-200x127.jpg',
+                                    url: 'instructor-johnsmith-400x254.jpg',
                                     aboutMe: 'lorem ipsum doloret sit amet,consectetur adipiscing elit'
                                 },
                                 {
                                     name: 'Angela Hart',
-                                    url: 'instructor-angelahart-200x127.jpg',
+                                    url: 'instructor-angelahart-400x254.jpg',
                                     aboutMe: 'lorem ipsum doloret sit amet,consectetur adipiscing elit'
                                 }
                             ]
@@ -97,6 +99,15 @@ export default {
             padding: 2rem 0;
             transform: translateY(4rem);
             border-top: 5px solid $brand_color;
+            .img-wrapper {
+                img {
+                    width: 100%;
+                    transition: all linear .3s;
+                    &:hover {
+                        box-shadow: 1px 5px 5px 8px rgba(0,0,0,0.10);
+                    }
+                }
+            }
             .name {
                 font-size: 1.3rem;
                 color: $title_color;

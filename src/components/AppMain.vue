@@ -21,6 +21,7 @@
         <div class="bg-effect">
             <img src="../assets/img/latestnews-bottom-new-color.png">
         </div>
+        
         <CoursesPercentages/>
 
         <SectionInstructors/>

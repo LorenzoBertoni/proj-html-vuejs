@@ -50,7 +50,7 @@ export default {
                 color: $btn_text_color;
             }
             p {
-                margin: 1.5rem 0 1rem 0;
+                margin: 1.5rem 0 3rem 0;
             }
         }
     }

@@ -15,7 +15,7 @@
             </div>
 
             <div class="contacts">
-                <h4>CONTACT DETAILS</h4>
+                <h4 style="margin-top: 2rem;">CONTACT DETAILS</h4>
                 <div class="contact-details">
                     <div class="address">
                         <i class="fa-solid fa-house-chimney"></i>
@@ -134,10 +134,13 @@ export default {
                 color: $brand_color !important;
             }
             .brand-info {
+                img {
+                    margin-top: 3rem;
+                }
                 .btn {
                     background-color: $brand_color;
                     color: $btn_text_color;
-                    margin-top: 1rem;
+                    margin-top: 1.5rem;
                 }
             }
         }

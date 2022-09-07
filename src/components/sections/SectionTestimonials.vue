@@ -46,27 +46,27 @@ export default {
                                 {
                                     name: 'Sophia Jones',
                                     url: 'testimonial-sophia.png',
-                                    isSaying: 'Avada Driving School really helped me build my confidence behind the whell and with driving in general, and they got me a first time pass! Highly recommended'
+                                    isSaying: 'Avada Driving School really helped me build my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended'
                                 },
                                 {
                                     name: 'Grant Hart',
                                     url: 'testimonial-grant.png',
-                                    isSaying: 'Avada Driving School really helped me build my confidence behind the whell and with driving in general, and they got me a first time pass!'
+                                    isSaying: 'Avada Driving School really helped me build my confidence behind the wheel and with driving in general, and they got me a first time pass!'
                                 },
                                 {
                                     name: 'Harold Smith',
                                     url: 'testimonial-harold.png',
-                                    isSaying: 'Avada Driving School really helped me build my confidence behind the whell and with driving in general'
+                                    isSaying: 'Avada Driving School really helped me build my confidence behind the wheel and with driving in general'
                                 },
                                 {
                                     name: 'Kate Jones',
                                     url: 'testimonial-kate.png',
-                                    isSaying: 'Avada Driving School really helped me build my confidence behind the whell and with driving in general, and they got me a first time pass! Highly recommended'
+                                    isSaying: 'Avada Driving School really helped me build my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended'
                                 },
                                 {
                                     name: 'Kelly Doe',
                                     url: 'testimonial-kelly.png',
-                                    isSaying: 'Avada Driving School really helped me build my confidence behind the whell and with driving in general. Highly recommended!'
+                                    isSaying: 'Avada Driving School really helped me build my confidence behind the wheel and with driving in general. Highly recommended!'
                                 }
                             ]
         }

@@ -24,6 +24,10 @@
                 <a href="#" class="btn">MORE FROM THE BLOG</a>
             </div>
         </div>
+
+        <div class="bg-effect boxed">
+            <img src="../../assets/img/latestnews-bottom-1200x105.png" alt="">
+        </div>
     </section>
 </template>
 
@@ -56,12 +60,13 @@ export default {
 <style scoped lang="scss">
 @import '../../styles/vars.scss';
     #latest-news {
-        height: 600px;
         background-image: url('../../assets/img/latestnews-background.jpg');
         background-position: center;
         background-size: cover;
         .card {
             border-top: 5px solid #7F9EA8;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
             .title {
                 margin-top: 3rem;
             }
@@ -69,7 +74,6 @@ export default {
         .d-flex-center {
             gap: 6rem;
             margin-top: 2rem;
-
             h4 {
                 margin: .5rem 0 .1rem 0;
                 color: $brand_color;
@@ -83,6 +87,13 @@ export default {
             background-color: $brand_color;
             color: $btn_text_color;
             margin-bottom: 1rem;
+        }
+
+        .bg-effect {
+            img {
+                width: 100%;
+                transform: translateY(-37px);
+            }
         }
     }
 </style>
