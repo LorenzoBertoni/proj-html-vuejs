@@ -81,7 +81,7 @@ export default {
 <style scoped lang="scss">
 @import '../../styles/vars.scss';
     .bottom-header {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: gray;
         padding: 2rem 0;
         .logo-wrapper {
             a {
